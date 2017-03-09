@@ -36,7 +36,7 @@ je kunt dit makkelijk weten via de optie: list info
 
 de botnet werkt op windows en linux en misschien mac omdat ik dat niet heb getest.
 
-de standerd port van de server is 4600
+de standard port van de server is 4600
 
 ik hoop de je het een goede botnet vind :D
 
