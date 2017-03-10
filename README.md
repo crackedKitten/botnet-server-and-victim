@@ -42,7 +42,7 @@ de botnet werkt op windows en linux en misschien mac omdat ik dat niet heb getes
 
 de standart port van de server is 4600
 
-ik hoop de je het een goede botnet vind :D
+ik hoop dat je het een goede botnet vind :D
 
 met vriendelijke groet
 mh123hack
