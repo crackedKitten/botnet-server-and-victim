@@ -47,6 +47,7 @@ mh123hack
 litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
 
 if you want your hacker name here donate or make the botnet famous.
+retweet: https://twitter.com/martinhermens1/status/839979932541415424
 
 DONATORS:
 
