@@ -1,4 +1,4 @@
-It is ofical the botnet is open source :Distributed
+It is ofical the botnet is open source :D
 
 here is a list of all the options:
 
