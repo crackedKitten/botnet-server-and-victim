@@ -46,7 +46,7 @@ dear regards.
 mh123hack
 litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
 
-I want to thank ( O shit waddup ) from hacflag for making a video tutorial for the botnet.
+I want to thank ( O shit waddup ) from hackflag for making a video tutorial for the botnet.
 https://hackflag.org/forum/member.php?action=profile&uid=5209
 
 if you want your hacker name here donate or make the botnet famous.
