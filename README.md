@@ -40,18 +40,20 @@ the victum is also the client open the victum with netbeans to control the botne
 the botnet is supported for windows, linux, and maby mac but i havend tested this.
 the standard port for the precompiled server ( botnet-server.jar ) is 4600 but you can change this in the source code.
 
-i hope you like my botnet :D
-
-dear regards.
-mh123hack
-litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
-
 I want to thank ( O shit waddup ) from hackflag for making a video tutorial for the botnet.
 https://hackflag.org/forum/member.php?action=profile&uid=5209
 
 if you want your hacker name here donate or make the botnet famous.
 retweet: https://twitter.com/martinhermens1/status/839979932541415424
-if you retweet this than your name will be placed down here.
+if you retweet this then your name will be placed down here.
+
+we are over 100 downloads if this botnet becomes famous than i will make updates on request.
+
+i hope you like my botnet :D
+
+dear regards.
+mh123hack
+litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
 
 DONATORS:
 
