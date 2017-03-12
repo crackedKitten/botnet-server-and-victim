@@ -45,7 +45,7 @@ public class Victim implements Runnable {
 
         String hostname = InetAddress.getLocalHost().getHostName(); // find the hostname from computer
         try {
-            URL whatismyip = new URL("http://checkip.amazonaws.com"); // checkt the external ip from the computer.
+            URL whatismyip = new URL("http://checkip.amazonaws.com"); // check the external ip from the computer using amazon AWS
             BufferedReader in = new BufferedReader(new InputStreamReader(
                     whatismyip.openStream()));
             ip = in.readLine();

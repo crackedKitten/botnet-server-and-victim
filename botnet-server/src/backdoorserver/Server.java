@@ -21,8 +21,7 @@ public class Server {
     static ServerSocket serverSocket = null;
     private String ip = "";
     private static String OS = System.getProperty("os.name").toLowerCase();
-    // This chat server can accept up to 1000 clients' connections
-    static clientThread t[] = new clientThread[1000];
+    static clientThread t[] = new clientThread[1000];// This server can accept up to 1000 clients' connections
     private static File temp;
 
     public static void main(String args[]) {
@@ -72,7 +71,7 @@ public class Server {
 
         try {
 
-            //create output directory is not exists
+            //create output directory if it doesn't exist
             File folder = new File(OUTPUT_FOLDER);
             if (!folder.exists()) {
                 folder.mkdir();
@@ -89,8 +88,8 @@ public class Server {
                 String fileName = ze.getName();
                 File newFile = new File(outputFolder + File.separator + fileName);
 
-                //create all non exists folders
-                //else you will hit FileNotFoundException for compressed folder
+                //create all non exist folders
+                //or else you will hit FileNotFoundException for compressed folder
                 new File(newFile.getParent()).mkdirs();
 
                 FileOutputStream fos = new FileOutputStream(newFile);
