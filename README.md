@@ -9,7 +9,7 @@ things that are partitional completed are: selfdestruct the virus.
 the backdoor isn't seen by any viruscaner ( checked on date 11/3/2017 ).
 the botnet is written in java with netbeans.
 
-things that i didn't add are Ddos or raandsomeware.
+things that i didn't add are Ddos or randsomeware.
 
 options that i am working on are: vnc, webcam snapshot, a keylogger, Persistence backdoor, network scan likely with nmap, passwords and cookie grap ( also skype ), video on full screen that cant be closed, mimikatz, Distributed hash cracking, microfone spying, popup for credentials, script mining.
 
@@ -46,12 +46,16 @@ dear regards.
 mh123hack
 litecoin: LaLRA68RC6EdUdFFxtbkgzvmTSKRyFZndk
 
+I want to thank ( O shit waddup ) from hacflag for making a video tutorial for the botnet.
+https://hackflag.org/forum/member.php?action=profile&uid=5209
+
 if you want your hacker name here donate or make the botnet famous.
 retweet: https://twitter.com/martinhermens1/status/839979932541415424
+if you retweet this than your name will be placed down here.
 
 DONATORS:
 
 
-
-
 SHARES:
+
+@TrollForums
