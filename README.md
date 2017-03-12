@@ -47,7 +47,7 @@ if you want your hacker name here donate or make the botnet famous.
 retweet: https://twitter.com/martinhermens1/status/839979932541415424
 if you retweet this then your name will be placed down here.
 
-we are over 100 downloads if this botnet becomes famous than i will make updates on request.
+we are over 100 downloads if this botnet becomes famous and get donations than i will make updates on request.
 
 i hope you like my botnet :D
 
